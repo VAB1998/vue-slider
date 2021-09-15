@@ -21,17 +21,13 @@ header h1 {
     /* Style */
     background-color: whitesmoke;
     /* Spacing and Dimensions*/
-    height: 350px;
-    width: 700px;
+    height: 375px;
+    width: 600px;
     /* Position */
     margin: 30px auto;   
     /* Flex Settings */
     display: flex;
 }
-
-
-
-
 
 
 #carousel .previous_image,
@@ -52,6 +48,14 @@ header h1 {
 #carousel .image_slider{
     width: calc(100% - 50px);
 }
+
+#carousel .image_slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 
 
 
