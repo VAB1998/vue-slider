@@ -35,9 +35,9 @@ let app = new Vue({
             
             this.indexImage == this.carouselImages.length -1 ? this.indexImage = 0 : this.indexImage++
             console.log(this.indexImage)
+            return 'Ciao'
         },
         
     }
 });
-
-setInterval(app.methods.nextImage(), 1000)
+setInterval(app.nextImage, 3000)
