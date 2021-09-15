@@ -24,6 +24,16 @@ let app = new Vue({
     },
 
     methods: {
-       
+        previousImage : function(){
+            
+            this.indexImage == 0 ? this.indexImage = this.carouselImages.length -1 : this.indexImage--
+            console.log(this.indexImage)
+        },
+
+        nextImage : function(){
+
+            this.indexImage == this.carouselImages.length -1 ? this.indexImage = 0 : this.indexImage++
+            console.log(this.indexImage)
+        }
     }
 });
