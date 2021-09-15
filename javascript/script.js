@@ -20,20 +20,24 @@ let app = new Vue({
                 imageAlt : 'Pigeon, Wildlife photography awards'
             }
         ],
-        indexImage : 0
+        indexImage : 0,
     },
 
     methods: {
+        
         previousImage : function(){
             
             this.indexImage == 0 ? this.indexImage = this.carouselImages.length -1 : this.indexImage--
             console.log(this.indexImage)
         },
-
+        
         nextImage : function(){
-
+            
             this.indexImage == this.carouselImages.length -1 ? this.indexImage = 0 : this.indexImage++
             console.log(this.indexImage)
-        }
+        },
+        
     }
 });
+
+setInterval(app.methods.nextImage(), 1000)
