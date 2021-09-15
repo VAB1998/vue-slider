@@ -20,6 +20,7 @@
     <title>Vue Slider</title>
 </head>
     <body>
+
         <header>
             <h1>Wildlife photography awards</h1>
         </header>
@@ -40,22 +41,21 @@
                     <div class="next_image" v-on:click="nextImage()" >
                         <i class="fas fa-angle-right"></i>
                     </div>
+                    <!-- Carousel Indicators -->
+                    <div class="carousel_indicators">
+                        <i v-for="(item, index) in carouselImages" :class="(index == indexImage ? 'carousel_indicator_active' : '')" class="fas fa-circle"></i>
+                    </div>
                 </div>
             </div>
+
+            <article>
+                <p>
+                    Born from a passion for wildlife, and decades of experience living & working in East Africa, The Comedy Wildlife Photography Awards began its life modestly in 2015 as a photographic competition.
+                    Since then, steered by its founders, Paul Joynson-Hicks MBE and Tom Sullam, it has grown into a globally renowned competition seen by millions of people every year, and always with wildlife conservation at its heart.
+                    The free competition, open to wildlife photography experts and novices, celebrates the hilarity of our natural world and highlights what we need to do to protect it. From a surprised otter to a swearing turtle, Comedy Wildlife’s photographs transcend cultures and ages to bring a smile to everyone’s face.
+                </p>
+            </article>
         </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- JS Import -->
     <script type="text/javascript" src="javascript/script.js">
