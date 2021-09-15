@@ -21,7 +21,7 @@
 </head>
     <body>
         <header>
-            <h1>Vue Slider</h1>
+            <h1>Wildlife photography awards</h1>
         </header>
         
         <main>
@@ -34,10 +34,10 @@
                     </div>
                     <!-- Image Slider -->
                     <div class="image_slider">
-                        <img src="" alt="">
+                        <img :src="carouselImages[indexImage].imageURL" alt="">
                     </div>
                     <!-- Next Image -->
-                    <div class="next_image">
+                    <div class="next_image" v-on:click="nextImage()" >
                         <i class="fas fa-angle-right"></i>
                     </div>
                 </div>
