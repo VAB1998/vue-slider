@@ -20,7 +20,7 @@ header h1 {
 article{
     /* Style */
     color: whitesmoke;
-    /* Spacing and Dimensions*/
+    /* Spacing and Dimensions */
     width: 80%;
     margin: 0 auto;
 }
@@ -28,7 +28,7 @@ article{
 /* ------Carousel------ */
 #carousel{
     /* Style */
-    /* Spacing and Dimensions*/
+    /* Spacing and Dimensions */
     height: 375px;
     width: 600px;
     /* Position */
@@ -92,12 +92,4 @@ article{
 #carousel .carousel_indicators .carousel_indicator_active{
     /* Style */
     color: #fff;
-
 }
-
-
-
-
-
-
-

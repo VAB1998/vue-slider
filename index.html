@@ -30,7 +30,7 @@
                 <!-- Carousel -->
                 <div id="carousel">
                     <!-- Previous Image -->
-                    <div class="previous_image" v-on:click="previousImage()">
+                    <div class="previous_image" v-on:click="clickPreviousImage()">
                         <i class="fas fa-angle-left"></i>
                     </div>
                     <!-- Image Slider -->
@@ -38,7 +38,7 @@
                         <img :src="carouselImages[indexImage].imageURL" alt="">
                     </div>
                     <!-- Next Image -->
-                    <div class="next_image" v-on:click="nextImage()" >
+                    <div class="next_image" v-on:click="clickNextImage()" >
                         <i class="fas fa-angle-right"></i>
                     </div>
                     <!-- Carousel Indicators -->

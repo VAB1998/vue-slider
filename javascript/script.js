@@ -21,12 +21,24 @@ let app = new Vue({
             }
         ],
         indexImage : 0,
+        autoplay : ''
     },
 
     methods: {
-        
+
+        clickPreviousImage: function(){
+            clearInterval(this.autoplay);
+            console.log('Timer stopped')
+            this.previousImage();
+        },
+
+        clickNextImage: function(){
+            clearInterval(this.autoplay);
+            console.log('Timer stopped')
+            this.nextImage();
+        },
+
         previousImage : function(){
-            
             this.indexImage == 0 ? this.indexImage = this.carouselImages.length -1 : this.indexImage--
             console.log(this.indexImage)
         },
@@ -35,9 +47,12 @@ let app = new Vue({
             
             this.indexImage == this.carouselImages.length -1 ? this.indexImage = 0 : this.indexImage++
             console.log(this.indexImage)
-            return 'Ciao'
-        },
-        
+        },      
+    },
+
+    created : function(){
+
+        this.autoplay = setInterval(this.nextImage, 3000)
     }
-});
-setInterval(app.nextImage, 3000)
+
+}); 
